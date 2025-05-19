@@ -240,9 +240,9 @@ export default function CyberSpace() {
       ref={containerRef}
     >
       <Head>
-        <title>W3SMC | Web3 Social Media Collective</title>
+        <title>W3SMC | Web3 Social Media Community</title>
         <meta name="description" content="The future of decentralized social interaction" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <style jsx global>{`

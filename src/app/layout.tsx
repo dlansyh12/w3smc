@@ -4,12 +4,12 @@ import './globals.css';
 
 const outfit = Outfit({
   subsets: ['latin'],
-  variable: '--font-outfit', // Opsional: untuk Tailwind
+  variable: '--font-outfit', 
 });
 
 export const metadata: Metadata = {
-  title: 'Landing Page Anda',
-  description: 'Landing page modern dengan Next.js',
+  title: 'W3SMC',
+  description: 'W3SMC Page',
 };
 
 export default function RootLayout({

@@ -391,7 +391,7 @@ export default function CyberSpace() {
       <main className="relative overflow-hidden">
 
         {/* Hero Quantum Gateway */}
-        <section className="relative flex items-center justify-center pt-32 pb-40 px-4">
+        <section className="relative flex items-center justify-center pt-26 pb-40 px-4">
           <TechOrb />
           <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full filter blur-3xl"></div>
           <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-red-500/10 rounded-full filter blur-3xl"></div>

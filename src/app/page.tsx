@@ -321,7 +321,7 @@ export default function CyberSpace() {
           <button className="relative overflow-hidden px-6 py-2.5 rounded-full">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/80 to-red-500/80 blur-md"></div>
             <span className="relative flex items-center text-white font-medium">
-              Access Portal
+              Join W3SMC
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
               </svg>
@@ -380,7 +380,7 @@ export default function CyberSpace() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Quantum Access
+                W3SMC
               </motion.button>
             </div>
           </motion.div>
@@ -487,7 +487,7 @@ export default function CyberSpace() {
                   <div className="relative rounded-xl overflow-hidden border border-gray-800/50 bg-gray-900/50">
                     <img 
                       src="/logo.png" 
-                      alt="Quantum Protocol" 
+                      alt="W3SMC" 
                       className="w-full h-auto object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>

@@ -222,6 +222,81 @@ export default function CyberSpace() {
     }
   ]);
 
+  const [portfolioItems] = useState([
+    {
+      id: 1,
+      title: "Portfolio 1",
+      description: "Project Showcase From W3SMC Member.",
+      image: "/project.jpg",
+      category: "Web3",
+      author: {
+        name: "Member 1",
+        initials: "P1",
+        link: "https://twitter.com/cryptodev"
+      }
+    },
+    {
+      id: 2,
+      title: "Portfolio 2",
+      description: "Project Showcase From W3SMC Member.",
+      image: "/project.jpg",
+      category: "Governance",
+      author: {
+        name: "Member 2",
+        initials: "P2",
+        link: "https://twitter.com/daomaster"
+      }
+    },
+    {
+      id: 3,
+      title: "Portfolio 3",
+      description: "Project Showcase From W3SMC Member.",
+      image: "/project.jpg",
+      category: "DeFi",
+      author: {
+        name: "Member 3",
+        initials: "P3",
+        link: "https://twitter.com/defiwizard"
+      }
+    },
+    {
+      id: 4,
+      title: "Portfolio 4",
+      description: "Project Showcase From W3SMC Member.",
+      image: "/project.jpg",
+      category: "VR",
+      author: {
+        name: "Member 4",
+        initials: "P4",
+        link: "https://twitter.com/metaversecreator"
+      }
+    },
+    {
+      id: 5,
+      title: "Portfolio 5",
+      description: "Project Showcase From W3SMC Member.",
+      image: "/project.jpg",
+      category: "Wallet",
+      author: {
+        name: "Member 5",
+        initials: "P5",
+        link: "https://twitter.com/walletdev"
+      }
+    },
+    {
+      id: 6,
+      title: "Portfolio 6",
+      description: "Project Showcase From W3SMC Member.",
+      image: "/project.jpg",
+      category: "Social",
+      author: {
+        name: "Member 6",
+        initials: "P6",
+        link: "https://twitter.com/socialbuilder"
+      }
+    }
+  ]);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -295,7 +370,7 @@ export default function CyberSpace() {
 
         {/* Holographic Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {['About', 'Vision', 'Projects', 'Ecosystem'].map((item, index) => (
+          {['About W3SMC', 'Vision & Mission', 'Portfolio Showcase', 'Latest Projects'].map((item, index) => (
             <motion.div
               key={item}
               whileHover={{ y: -2 }}
@@ -359,7 +434,7 @@ export default function CyberSpace() {
             transition={{ type: 'spring', damping: 25 }}
           >
             <div className="flex flex-col space-y-6">
-              {['About', 'Vision', 'Projects', 'Ecosystem'].map((item) => (
+              {['About W3SMC', 'Vision & Mission', 'Portfolio Showcase', 'Latest Project'].map((item) => (
                 <motion.div
                   key={item}
                   whileHover={{ x: 5 }}
@@ -380,7 +455,7 @@ export default function CyberSpace() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                W3SMC
+                Join W3SMC
               </motion.button>
             </div>
           </motion.div>
@@ -391,7 +466,7 @@ export default function CyberSpace() {
       <main className="relative overflow-hidden">
 
         {/* Hero Quantum Gateway */}
-        <section className="relative flex items-center justify-center pt-26 pb-40 px-4">
+        <section className="relative flex items-center justify-center pt-20 pb-60 px-4">
           <TechOrb />
           <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full filter blur-3xl"></div>
           <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-red-500/10 rounded-full filter blur-3xl"></div>
@@ -437,7 +512,7 @@ export default function CyberSpace() {
                 whileTap={{ scale: 0.97 }}
               >
                 <Link
-                  href="#join"
+                  href="https://t.me/w3smc"
                   className="relative group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white rounded-xl overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 group-hover:from-blue-600 group-hover:to-blue-800 transition-all duration-300"></div>
@@ -455,7 +530,7 @@ export default function CyberSpace() {
                 whileTap={{ scale: 0.97 }}
               >
                 <Link
-                  href="#about"
+                  href="#about w3smc"
                   className="relative group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white rounded-xl border border-gray-700 hover:border-gray-500 transition-all duration-300"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -470,7 +545,7 @@ export default function CyberSpace() {
 
         {/* About Cyber Protocol */}
         <motion.section 
-          id="about"
+          id="about w3smc"
           className="py-28 bg-gradient-to-b from-gray-900/30 to-black border-t border-gray-800/50 relative"
           style={{ opacity, y }}
         >
@@ -525,11 +600,11 @@ export default function CyberSpace() {
                 <div className="mt-10 grid grid-cols-2 gap-4">
                   <div className="bg-gray-900/50 p-4 rounded-xl border border-gray-800/50">
                     <h4 className="text-blue-400 font-semibold">800+ Member</h4>
-                    <p className="text-gray-400 text-sm mt-1">On Telegram</p>
+                    <p className="text-gray-400 text-sm mt-1">Di Telegram</p>
                   </div>
                   <div className="bg-gray-900/50 p-4 rounded-xl border border-gray-800/50">
                     <h4 className="text-red-400 font-semibold">470+ Followers</h4>
-                    <p className="text-gray-400 text-sm mt-1">ON Twitter</p>
+                    <p className="text-gray-400 text-sm mt-1">Di Twitter</p>
                   </div>
                 </div>
               </motion.div>
@@ -539,7 +614,7 @@ export default function CyberSpace() {
 
         {/* Vision & Mission Holograms */}
         <motion.section 
-          id="vision"
+          id="vision & mission"
           className="py-28 bg-black border-t border-gray-800/50 relative overflow-hidden"
           style={{ opacity, scale }}
         >
@@ -621,9 +696,158 @@ export default function CyberSpace() {
           </div>
         </motion.section>
 
+        {/* Quantum Portfolio Showcase */}
+        <motion.section 
+          id="portfolio showcase"
+          className="py-28 bg-gradient-to-b from-black to-gray-900/30 border-t border-gray-800/50 relative overflow-hidden"
+          style={{ opacity, y }}
+        >
+          <div className="absolute inset-0 bg-[url('/circuit-pattern.svg')] bg-[length:300px_300px] opacity-5"></div>
+          <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full filter blur-3xl"></div>
+          <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-red-500/10 rounded-full filter blur-3xl"></div>
+          
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div 
+              className="text-center mb-20"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl font-bold text-white mb-4">
+                <span className="bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent">
+                  Member Portfolios
+                </span>
+              </h2>
+              <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+                Showcasing innovative projects from our talented W3SMC community members
+              </p>
+            </motion.div>
+            
+            {/* Animated Grid Background */}
+            <div className="absolute inset-0 pointer-events-none -z-10">
+              <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-[length:100px_100px] opacity-10">
+                <motion.div 
+                  className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-transparent to-red-500/10"
+                  animate={{
+                    backgroundPosition: ['0% 0%', '100% 100%'],
+                  }}
+                  transition={{
+                    duration: 15,
+                    repeat: Infinity,
+                    repeatType: 'reverse',
+                    ease: 'linear'
+                  }}
+                />
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {portfolioItems.map((item, index) => (
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="group relative"
+                >
+                  <CyberBorder>
+                    <div className="relative bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800/50 h-full flex flex-col transition-all duration-500 group-hover:bg-gray-900/70">
+                      {/* Holographic Project Preview */}
+                      <div className="relative overflow-hidden h-48">
+                        <img 
+                          src={item.image} 
+                          alt={item.title} 
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div className="absolute top-4 left-4">
+                          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-black/80 text-blue-300 border border-blue-500/30">
+                            {item.category}
+                          </span>
+                        </div>
+                        {/* Floating Tech Orb Effect */}
+                        <motion.div 
+                          className="absolute -bottom-20 -right-20 w-40 h-40 rounded-full filter blur-xl opacity-70"
+                          animate={{
+                            background: [
+                              `radial-gradient(circle, ${COLORS.primary}55, transparent 70%)`,
+                              `radial-gradient(circle, ${COLORS.secondary}55, transparent 70%)`,
+                              `radial-gradient(circle, ${COLORS.primary}55, transparent 70%)`,
+                            ],
+                          }}
+                          transition={{
+                            duration: 8,
+                            repeat: Infinity,
+                            repeatType: 'reverse'
+                          }}
+                        />
+                      </div>
+                      
+                      <div className="p-6 flex-grow">
+                        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+                          {item.title}
+                        </h3>
+                        <p className="text-gray-400 mb-4">{item.description}</p>
+                        
+                        <div className="flex items-center mt-4">
+                          <div className="flex-shrink-0 mr-3">
+                            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-red-500 flex items-center justify-center">
+                              <span className="text-xs font-bold text-white">{item.author.initials}</span>
+                            </div>
+                          </div>
+                          <div>
+                            <p className="text-sm text-gray-300">Created by</p>
+                            <a 
+                              href={item.author.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors duration-300 flex items-center"
+                            >
+                              @{item.author.name}
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="px-6 pb-6">
+                        <button className="w-full py-2.5 bg-gradient-to-r from-blue-600/80 to-red-600/80 hover:from-blue-700 hover:to-red-700 text-white rounded-lg transition-all duration-300 flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/20">
+                          <span>View Project</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </CyberBorder>
+                </motion.div>
+              ))}
+            </div>
+            
+            <motion.div 
+              className="text-center mt-16"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+            >
+                <button className="w-full max-w-xs mx-auto px-8 py-3.5 border border-gray-700/50 hover:border-gray-600/70 text-gray-300 hover:text-white rounded-xl transition-all duration-300 flex items-center justify-center bg-black/50 hover:bg-black/70">
+                  View All Portfolios
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+            </motion.div>
+          </div>
+        </motion.section>
+
         {/* Quantum Projects Showcase */}
         <motion.section 
-          id="projects"
+          id="latest projects"
           className="py-28 bg-gradient-to-b from-black to-gray-900/30 border-t border-gray-800/50 relative"
           style={{ opacity, y }}
         >
@@ -771,7 +995,7 @@ export default function CyberSpace() {
             </div>
             
             <div className="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-              {['Protocol', 'Governance', 'Developers', 'Community', 'Blog'].map((item) => (
+              {['Developers', 'Latest Blog', 'W3SMC Community', 'Latest Space X'].map((item) => (
                 <Link 
                   key={item}
                   href={`#${item.toLowerCase()}`} 

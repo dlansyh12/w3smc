@@ -258,42 +258,6 @@ export default function CyberSpace() {
         initials: "P3",
         link: "https://twitter.com/defiwizard"
       }
-    },
-    {
-      id: 4,
-      title: "Portfolio 4",
-      description: "Project Showcase From W3SMC Member.",
-      image: "/project.jpg",
-      category: "VR",
-      author: {
-        name: "Member 4",
-        initials: "P4",
-        link: "https://twitter.com/metaversecreator"
-      }
-    },
-    {
-      id: 5,
-      title: "Portfolio 5",
-      description: "Project Showcase From W3SMC Member.",
-      image: "/project.jpg",
-      category: "Wallet",
-      author: {
-        name: "Member 5",
-        initials: "P5",
-        link: "https://twitter.com/walletdev"
-      }
-    },
-    {
-      id: 6,
-      title: "Portfolio 6",
-      description: "Project Showcase From W3SMC Member.",
-      image: "/project.jpg",
-      category: "Social",
-      author: {
-        name: "Member 6",
-        initials: "P6",
-        link: "https://twitter.com/socialbuilder"
-      }
     }
   ]);
 
@@ -466,7 +430,7 @@ export default function CyberSpace() {
       <main className="relative overflow-hidden">
 
         {/* Hero Quantum Gateway */}
-        <section className="relative flex items-center justify-center pt-20 pb-60 px-4">
+        <section className="relative flex items-center justify-center pt-12 pb-30 md:pt-26 md:pb-20 px-4">
           <TechOrb />
           <div className="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full filter blur-3xl"></div>
           <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-red-500/10 rounded-full filter blur-3xl"></div>

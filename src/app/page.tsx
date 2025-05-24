@@ -507,7 +507,7 @@ export default function CyberSpace() {
           </motion.div>
         </section>
 
-        {/* About Cyber Protocol */}
+        {/* About W3SMC */}
         <motion.section 
           id="about w3smc"
           className="py-28 bg-gradient-to-b from-gray-900/30 to-black border-t border-gray-800/50 relative"
@@ -811,60 +811,62 @@ export default function CyberSpace() {
         
         {/* Support W3SMC Section */}
         <motion.div 
-          id='support w3smc'
-          className="py-28 bg-gradient-to-b from-black to-blue-900/30 border-t border-gray-800/50 relative"
+          id='support-w3smc'
+          className="py-20 md:py-28 bg-gradient-to-b from-black to-blue-900/30 border-t border-gray-800/50 relative"
           style={{ opacity, y }} 
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent">
                   Support W3SMC
                 </span>
               </h2>
-              <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              <p className="text-base md:text-xl text-gray-400 max-w-3xl mx-auto px-2">
                 Jika kamu ingin mendukung W3SMC lebih lanjut, bisa melalui EVM Address dibawah.
               </p>
             </motion.div>
             
             <motion.div
-              className="flex justify-center"
+              className="flex justify-center px-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 max-w-2xl w-full">
+              <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-4 md:p-6 w-full max-w-2xl">
                 <div className="flex flex-col items-center">
-                  <h3 className="text-lg font-medium text-gray-300 mb-4">EVM Wallet Address</h3>
+                  <h3 className="text-base md:text-lg font-medium text-gray-300 mb-3 md:mb-4">
+                    EVM Wallet Address
+                  </h3>
                   
-                  <div className="relative flex items-center justify-between bg-gray-900/70 px-4 py-3 rounded-md w-full border border-gray-700">
-                    <div className="flex-1 flex justify-center">
-                      <span className="text-blue-400 font-mono text-sm md:text-base text-center">
-                      0x09D0411E4a52C7585F03EA921c5dD9cc6B81CcA3
+                  <div className="relative flex items-center justify-center bg-gray-900/70 px-3 py-2 md:px-4 md:py-3 rounded-md w-full border border-gray-700 min-h-[3rem]">
+                    <div className="flex items-center justify-center w-full">
+                      <span className="text-blue-400 font-mono text-xs sm:text-sm md:text-base text-center break-all px-2">
+                        0x09D0411E4a52C7585F03EA921c5dD9cc6B81CcA3
                       </span>
+                      
+                      <button 
+                        className="ml-2 shrink-0 text-gray-400 hover:text-blue-400 transition-colors p-1"
+                        onClick={() => {
+                          navigator.clipboard.writeText('0x09D0411E4a52C7585F03EA921c5dD9cc6B81CcA3');
+                        }}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                      </button>
                     </div>
-                    
-                    <button 
-                      className="absolute right-3 text-gray-400 hover:text-blue-400 transition-colors"
-                      onClick={() => {
-                        navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F');
-                      }}
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
-                      </svg>
-                    </button>
                   </div>
                   
-                  <p className="text-sm text-gray-500 mt-3 text-center">
-                    Bisa click icon copy untuk manyalin alamat ke clipboard
+                  <p className="text-xs md:text-sm text-gray-500 mt-2 md:mt-3 text-center">
+                    Klik icon copy untuk manyalin alamat
                   </p>
                 </div>
               </div>

@@ -494,12 +494,12 @@ export default function CyberSpace() {
                 whileTap={{ scale: 0.97 }}
               >
                 <Link
-                  href="#about w3smc"
+                  href="#support w3smc"
                   className="relative group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white rounded-xl border border-gray-700 hover:border-gray-500 transition-all duration-300"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <span className="relative flex items-center">
-                    Apa itu W3SMC?
+                    Support W3SMC
                   </span>
                 </Link>
               </motion.div>
@@ -808,11 +808,74 @@ export default function CyberSpace() {
             </motion.div>
           </div>
         </motion.section>
+        
+        {/* Support W3SMC Section */}
+        <motion.div 
+          id='support w3smc'
+          className="py-28 bg-gradient-to-b from-black to-blue-900/30 border-t border-gray-800/50 relative"
+          style={{ opacity, y }} 
+        >
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl font-bold text-white mb-4">
+                <span className="bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent">
+                  Support W3SMC
+                </span>
+              </h2>
+              <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+                Jika kamu ingin mendukung W3SMC lebih lanjut, bisa melalui EVM Address dibawah.
+              </p>
+            </motion.div>
+            
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 max-w-2xl w-full">
+                <div className="flex flex-col items-center">
+                  <h3 className="text-lg font-medium text-gray-300 mb-4">EVM Wallet Address</h3>
+                  
+                  <div className="relative flex items-center justify-between bg-gray-900/70 px-4 py-3 rounded-md w-full border border-gray-700">
+                    <div className="flex-1 flex justify-center">
+                      <span className="text-blue-400 font-mono text-sm md:text-base text-center">
+                      0x09D0411E4a52C7585F03EA921c5dD9cc6B81CcA3
+                      </span>
+                    </div>
+                    
+                    <button 
+                      className="absolute right-3 text-gray-400 hover:text-blue-400 transition-colors"
+                      onClick={() => {
+                        navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F');
+                      }}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                      </svg>
+                    </button>
+                  </div>
+                  
+                  <p className="text-sm text-gray-500 mt-3 text-center">
+                    Bisa click icon copy untuk manyalin alamat ke clipboard
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
 
-        {/* Quantum Projects Showcase */}
+        {/* Projects W3SMC Showcase */}
         <motion.section 
           id="latest projects"
-          className="py-28 bg-gradient-to-b from-black to-gray-900/30 border-t border-gray-800/50 relative"
+          className="py-28 bg-gradient-to-b from-black to-gray-900/30 border-gray-800/50 relative"
           style={{ opacity, y }}
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -897,7 +960,7 @@ export default function CyberSpace() {
 
         {/* Cybernetic CTA */}
         <motion.section 
-          className="py-20 bg-gradient-to-br from-blue-900/20 via-black to-red-900/20 border-t border-b border-gray-800/50 relative overflow-hidden"
+          className="py-20 bg-gradient-to-br from-blue-900/10 via-black to-red-900/20 border-b border-gray-800/50 relative overflow-hidden"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

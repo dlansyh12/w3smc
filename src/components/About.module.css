@@ -1,0 +1,122 @@
+.about {
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 9rem 2rem 7rem;
+    text-align: center;
+    overflow: hidden;
+    font-family: var(--font-main, 'Inter'), sans-serif;
+  }
+  
+  /* subtle animated grid background */
+  .about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(225deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridFloat 25s linear infinite;
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  @keyframes gridFloat {
+    0% { background-position: 0 0, 0 0; }
+    100% { background-position: 100px 100px, -100px -100px; }
+  }
+  
+  .titleWrapper {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2.8rem;
+    z-index: 2;
+  }
+  
+  .title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+    background: linear-gradient(90deg, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .title span {
+    background: linear-gradient(90deg, #fff, #ddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Description */
+  .description {
+    max-width: 760px;
+    margin: 0 auto 4rem;
+    font-size: 1.25rem;
+    color: #aaa;
+    line-height: 1.9;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Stat section */
+  .statHighlight {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .statBox {
+    background: radial-gradient(circle at top, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.03) 100%);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 3rem 4rem;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 25px rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+    width: fit-content;
+  }
+  
+  .statBox:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 40px rgba(255,255,255,0.15);
+  }
+  
+  .statNumber {
+    font-size: 4.6rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.6rem;
+  }
+  
+  .statBox p {
+    color: #ccc;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.6rem;
+    }
+  
+    .titleWrapper {
+      margin-bottom: 3rem;
+    }
+  
+    .description {
+      font-size: 1.05rem;
+    }
+  
+    .statBox {
+      padding: 2.2rem 2.8rem;
+    }
+  
+    .statNumber {
+      font-size: 3.2rem;
+    }
+  }
+  

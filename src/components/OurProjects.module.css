@@ -1,0 +1,87 @@
+.projects {
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 10rem 2rem;
+    text-align: center;
+    font-family: var(--font-main, 'Inter'), sans-serif;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    margin-bottom: 5rem;
+}
+
+.title span {
+    background: linear-gradient(90deg, #fff, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.cardsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.projectCard {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.blurOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    z-index: 1;
+}
+
+.comingSoon {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .cardsWrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .projectCard {
+        width: 90%;
+        height: 200px;
+    }
+
+    .comingSoon {
+        font-size: 1.3rem;
+    }
+}

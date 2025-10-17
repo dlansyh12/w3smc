@@ -1,0 +1,95 @@
+.partnership {
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 12rem 2rem 10rem; /* ukuran lebih besar */
+    text-align: center;
+    font-family: var(--font-main, 'Inter'), sans-serif;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 4.2rem; /* lebih besar dari sebelumnya */
+    font-weight: 800;
+    margin-bottom: 5rem; /* jarak ke logo lebih lega */
+    position: relative;
+}
+
+.partnerLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem; /* lebih lega antar logo */
+    flex-wrap: wrap;
+}
+
+.partnerCard {
+    display: inline-block;
+    background: rgba(255,255,255,0.03);
+    padding: 2.5rem; /* lebih besar */
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    filter: brightness(1);
+}
+
+.partnerCard:hover {
+    filter: brightness(1.3);
+    transform: scale(1.05); /* sedikit zoom saat hover */
+}
+
+.ctaWrapper {
+    margin-top: 5rem;
+    font-size: 1.35rem; /* lebih besar */
+    color: #ccc;
+}
+
+.ctaWrapper p {
+    display: inline-block;
+    text-align: center;
+}
+
+.ctaLink {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.ctaLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.ctaLink:hover::after {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .partnerLogos {
+        gap: 3rem;
+    }
+
+    .partnerCard {
+        padding: 2rem;
+    }
+
+    .ctaWrapper {
+        font-size: 1.15rem;
+    }
+}

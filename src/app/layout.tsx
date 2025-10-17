@@ -1,25 +1,22 @@
 import type { Metadata } from 'next';
-import { Outfit } from 'next/font/google';
 import './globals.css';
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: '--font-outfit', 
-});
+import SmoothScrollProvider from './providers/SmoothScrollProvider'; 
 
 export const metadata: Metadata = {
   title: 'W3SMC',
-  description: 'W3SMC Page',
+  description: 'Web3 Social Media Community',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={outfit.className}>
-      <body>{children}</body>
+    <html lang="en">
+      <body>
+        {/* ✅ Smooth scroll aktif untuk seluruh halaman */}
+        <SmoothScrollProvider>
+          {children}
+        </SmoothScrollProvider>
+      </body>
     </html>
   );
 }
+

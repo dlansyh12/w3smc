@@ -7,8 +7,7 @@ import Partner1Logo from '../../public/partner1.png';
 import Partner2Logo from '../../public/partner2.png';
 
 const partners = [
-  { name: 'Partner 1', logo: Partner1Logo, url: 'https://x.com/historymakersio' },
-  { name: 'Partner 2', logo: Partner2Logo, url: 'https://rnjtoken.io' },
+  { name: 'Partner 2', logo: Partner2Logo, url: 'https://rnjtoken.io' }
 ];
 
 export default function OurPartnership() {

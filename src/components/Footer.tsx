@@ -24,7 +24,7 @@ export default function Footer() {
 
         <div className={styles.right}>
           <a 
-            href="https://x.com/w3smc" 
+            href="https://x.com/WEB3SMC" 
             target="_blank" 
             rel="noopener noreferrer" 
             className={styles.social}

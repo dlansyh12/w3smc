@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './Navbar.module.css';
-import LogoImg from '../../public/logo.png';
+import LogoImg from '../../../public/logo.png';
 import Image from 'next/image';
 
 export default function Navbar() {

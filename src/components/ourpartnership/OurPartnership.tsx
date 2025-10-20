@@ -3,8 +3,7 @@
 import { motion } from 'framer-motion';
 import styles from './OurPartnership.module.css';
 import Image from 'next/image';
-import Partner1Logo from '../../public/partner1.png';
-import Partner2Logo from '../../public/partner2.png';
+import Partner2Logo from '../../../public/partner2.png';
 
 const partners = [
   { name: 'Partner 2', logo: Partner2Logo, url: 'https://rnjtoken.io' }

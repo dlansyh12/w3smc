@@ -9,6 +9,7 @@ import Footer from '../components/footer/Footer';
 
 export default function HomePage() {
   return (  
+    // All pages
     <>
       <Navbar />
       <Hero />

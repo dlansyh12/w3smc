@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function ValueSection() {
   const values = [
     {
-      // ✅ Web3 Learning
+      // Web3 Learning
       icon: (
         <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" className={styles.svgIcon}>
           <path
@@ -21,7 +21,7 @@ export default function ValueSection() {
       desc: 'Learn the fundamentals of Web3 and blockchain.',
     },
     {
-      // ✅ Web3 Jobs
+      // Web3 Jobs
       icon: (
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.svgIcon}>
           <path
@@ -37,7 +37,7 @@ export default function ValueSection() {
       desc: 'Discover opportunities in decentralized projects.',
     },
     {
-      // ✅ Market Outlook (rapihin posisi & centering)
+      // Market Outlook (rapihin posisi & centering)
       icon: (
         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" className={styles.svgIcon}>
           <g transform="translate(40, 40)">

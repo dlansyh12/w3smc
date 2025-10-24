@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #000; /* full black */
+  background: #000; 
   color: #fff;
   position: sticky;
   top: 0;
@@ -18,7 +18,6 @@
   position: relative;
 }
 
-/* CTA Button */
 .joinBtn {
   background: #fff;
   color: #000;
@@ -37,7 +36,6 @@
   transform: translateY(-2px);
 }
 
-/* === Responsive tweaks === */
 @media (max-width: 768px) {
   .nav {
     padding: 0.8rem 1.2rem;
@@ -46,7 +44,7 @@
   .logo {
     width: 115px;
     height: 50px;
-    margin-left: -0.5rem; /* agak kirian */
+    margin-left: -0.5rem; 
   }
 
   .joinBtn {

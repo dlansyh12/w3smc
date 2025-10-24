@@ -2,16 +2,16 @@
     position: relative;
     background: #000;
     color: #fff;
-    padding: 12rem 2rem 10rem; /* ukuran lebih besar */
+    padding: 12rem 2rem 10rem;
     text-align: center;
     font-family: var(--font-main, 'Inter'), sans-serif;
     overflow: hidden;
 }
 
 .title {
-    font-size: 4.2rem; /* lebih besar dari sebelumnya */
+    font-size: 4.2rem; 
     font-weight: 800;
-    margin-bottom: 5rem; /* jarak ke logo lebih lega */
+    margin-bottom: 5rem;
     position: relative;
 }
 
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem; /* lebih lega antar logo */
+    gap: 6rem; 
     flex-wrap: wrap;
 }
 
@@ -36,12 +36,12 @@
 
 .partnerCard:hover {
     filter: brightness(1.3);
-    transform: scale(1.05); /* sedikit zoom saat hover */
+    transform: scale(1.05); 
 }
 
 .ctaWrapper {
     margin-top: 5rem;
-    font-size: 1.35rem; /* lebih besar */
+    font-size: 1.35rem; 
     color: #ccc;
 }
 
